@@ -54,10 +54,10 @@ To solve this, I ran a code that filters out Information technology department a
 
 The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with NOT to filter for employees not in this department.
 
-## Summary
-In this project, I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables from the organization database, log_in_attempts and employees. I used the AND, OR, and NOT operators to filter for the specific information needed for each task. I also used LIKE and the percentage sign (%) wildcard to filter for patterns.
+## Project Summary
+In this project, I applied SQL filtering techniques to analyze login attempts and employee data from two tables in the organization database: log_in_attempts and employees. Using SQL operators like AND, OR, NOT, and LIKE with wildcards (%), I filtered and retrieved specific information regarding login activity and machine usage. This helped to identify patterns and potential security issues related to unauthorized access or suspicious activity.
 
-## Skills Applied
+## Skills Learned and Applied
  - SQL Querying for Data Analysis
  - Log and Security Incident Analysis
  - Critical Thinking and Problem Solving
