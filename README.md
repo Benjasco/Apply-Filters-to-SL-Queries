@@ -1,9 +1,9 @@
 # Apply filters to SQL queries
 
 ## Objective
-My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks.
+To investigate and analyze security logs using SQL queries on a sample organization database by filtering and analyzing system logs to identify vulnerabilities and potential threats, contributing to enhanced system security and risk management.
 
-## Description of Work Done
+## Description of Tasks
 ### Retrieve after hours failed login attempts
 There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.
 
@@ -11,7 +11,7 @@ The following code demonstrates how I created a SQL query to filter for failed l
 
 ![after hours failed login attempts](https://github.com/user-attachments/assets/f385111d-4797-4bc1-aa81-a6b5c89f4764)
 
-he first part of the screenshot before the table is my query, and the second part is a portion of the output from my query. This query filters for failed login attempts that occurred after my organization closing hour (18:00). First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an AND operator to filter my results to output only failed login attempts that occurred after 18:00. 
+The first part of the screenshot before the table is my query, and the second part is a portion of the output from my query. This query filters for failed login attempts that occurred after my organization closing hour (18:00). First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an AND operator to filter my results to output only failed login attempts that occurred after 18:00. 
 The first condition login_time > '18:00', filters for the login attempts that occurred after 18:00. The second condition success = FALSE, filters for the failed login attempts. 
 
 ### Retrieve login attempts on specific dates
@@ -55,4 +55,9 @@ To solve this, I ran a code that filters out Information technology department a
 The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with NOT to filter for employees not in this department.
 
 ## Summary
-In this project, I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables from my organization database, log_in_attempts and employees. I used the AND, OR, and NOT operators to filter for the specific information needed for each task. I also used LIKE and the percentage sign (%) wildcard to filter for patterns.
+In this project, I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables from the organization database, log_in_attempts and employees. I used the AND, OR, and NOT operators to filter for the specific information needed for each task. I also used LIKE and the percentage sign (%) wildcard to filter for patterns.
+
+## Skills Applied
+ - SQL Querying for Data Analysis
+ - Log and Security Incident Analysis
+ - Critical Thinking and Problem Solving
